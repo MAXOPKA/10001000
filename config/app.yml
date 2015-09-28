@@ -1,0 +1,26 @@
+---
+app:
+  target: 1000000.0
+  current: 345349.99
+  currencies:
+    rub:
+      name: "Рубль"
+      current: true
+      images:
+        0.01: 001.gif
+        0.05: 005.gif
+        0.1: 01.gif
+        0.5: 05.gif
+        1: 1.gif
+        2: 2.gif
+        5: 5.gif
+        10: 10.gif
+        50: 50.jpg
+        100: 100.jpg
+        500: 500.jpg
+        1000: 1000.jpg
+        5000: 5000.jpg
+    usd:
+      name: "Доллар США"
+    eur:
+      name: "Евро"

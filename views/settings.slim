@@ -1,0 +1,11 @@
+form[action="" method="post"]
+  label[for="app[target]"] = 'Цель'
+  br/
+  input[name="app[target]" type="text" value="#{ @settings['app']['target'] }"]
+  br/
+  label[for="app[current]"] = 'Достигнуто'
+  br/
+  input[name="app[current]" type="text" value="#{ @settings['app']['current'] }"]
+  br/
+  br/
+  input[type="submit" value="Сохранить"]

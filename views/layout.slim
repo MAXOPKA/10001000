@@ -1,12 +1,25 @@
 doctype html
 html
   head
-    title = @title
-    link[rel="stylesheet" type="text/css" href="/css/style.css" media="all"]
+    title= @title
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    script[type="application/x-javascript"]
+      | addEventListener("load"), function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);
+    meta [content="Qurilish under construction Responsive Templates), Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" name="keywords"] /
+    link href="/css/style.css" rel="stylesheet" type="text/css" /
+    link href="/css/jquery.countdown.css" rel="stylesheet" /
+    script src="/javascript/jquery.min.js"
+        script src="/javascript/jquery.countdown.js"
+        script src="/javascript/script.js"
+        link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" /
   body
-    .wrapper
-      == slim :'partials/menu'
-      h1
-        = @title
-      .content
-        == yield
+    .banner
+      .wrap
+        .banner-text
+          h1= @title
+          .timer_wrap
+            == yield
+      .clear
+    .banner-text-info
+    .copy-rights
+      p

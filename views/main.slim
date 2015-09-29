@@ -4,11 +4,10 @@ ul.header_of_content
     span.money_target = @settings['app']['target'].round
   li
     | Текущая сумма:
-    span.money_current = @settings['app']['current'].round(2)
-- @current_balans = @settings['app']['current']
+    span.money_current = @settings['app']['current'].round 2
+- @score = @settings['app']['current']
 - @settings['app']['currencies']['rub']['images'].sort_by{ |k, v| k }.reverse.each do |pair|
-  - (@current_balans / pair[0]).to_i.times do
+  - (@score.round(2) / pair[0]).to_i.times do
     span[class="#{ pair[0].to_s.gsub /\./, '' }"]
       img[src="/images/money/rub/#{ pair[1] }" width="" height="40"]
-    - @current_balans -= pair[0].round(2)
-    = @current_balans
+    - @score -= pair[0]

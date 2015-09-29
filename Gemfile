@@ -6,7 +6,6 @@ gem 'rack'
 gem 'unicorn'
 gem 'sinatra'
 gem 'slim'
-gem 'yaml'
 
 group :development, :test do
   gem 'sinatra-reloader'
@@ -14,4 +13,5 @@ group :development, :test do
   gem 'factory_girl'
   gem 'faker'
   gem 'capybara'
+  gem 'cucumber'
 end

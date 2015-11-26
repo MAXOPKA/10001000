@@ -18,7 +18,6 @@ end
 
 group :deployment do
   gem 'capistrano', '~> 3.4.0'
-  gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'

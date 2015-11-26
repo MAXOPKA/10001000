@@ -61,12 +61,10 @@
 #   }
 
 server 'sulfur.locum.ru',
-  user: 'hosting_maxopka',
-  roles: %w{web app},
   ssh_options: {
-    user: 'hosting_maxopka', # overrides user setting above
+    user: 'hosting_maxopka',
     keys: %w(~/.ssh/id_rsa),
     forward_agent: true,
-    auth_methods: %w(publickey)
+    auth_methods: %w(publickey password)
     # password: 'please use keys'
   }

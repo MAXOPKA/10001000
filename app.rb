@@ -14,7 +14,7 @@ class App < Sinatra::Base
   get '/' do
     @title = 'Главная'
     slim :main
-  end
+  endt
 
   get '/about' do
     @title = 'О сайте'

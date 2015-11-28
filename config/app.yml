@@ -1,7 +1,7 @@
 ---
 app:
   target: 1000000.0
-  current: 4334.0
+  current: 444334.0
   currencies:
     rub:
       name: "Рубль"
